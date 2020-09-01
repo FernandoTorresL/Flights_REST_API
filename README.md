@@ -4,7 +4,7 @@
 
 I will try to build a REST API using Node.js with the help of this awesome tutorial series [Let's Build a Node.js REST API](https://hashnode.com/series/lets-build-a-nodejs-rest-api-ckcov1aob00dcfms19o5g2x42) made by [Victoria Lo](https://lo-victoria.com/)
 
-## Planning our Flights-API
+### Planning our Flights-API
 
 I will be making a simple API for some example data flight that we got from another scraping project (WIP).
 
@@ -16,7 +16,7 @@ To plan this API, like Victoria taught us, we must first understand what we want
 4. I can get a single data flight (with stopovers) by querying by departure, arrival and date
 5. I can delete a single data flight from the database
 
-### Our Data Flight
+#### Our Data Flight
 
 These is, so far, an example of data flight:
 
@@ -69,6 +69,32 @@ Routes  HTTP Methods  Description
 | /flights | DELETE | Deletes all flights             |
 
 ---
+
+### How to view this project at this point
+
+#### Clone this repo
+
+```cmd
+git clone https://github.com/FernandoTorresL/Flights_REST_API.git
+```
+
+#### Install
+
+```cmd
+npm install
+```
+
+#### Test
+
+Now, open a new terminal, in the same folder, and test it with
+
+```cmd
+node server.js
+```
+If it works, you should see in the console the output message telling you that the server is listening
+
+---
+
 
 ## Follow me
 
