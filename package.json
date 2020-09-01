@@ -1,0 +1,27 @@
+{
+  "name": "flights_rest_api",
+  "version": "1.0.0",
+  "description": "A simple API for some example data flight that we got from another scraping project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoTorresL/Flights_REST_API.git"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "node",
+    "flight",
+    "scrap",
+    "flights"
+  ],
+  "author": "Fer Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandoTorresL/Flights_REST_API/issues"
+  },
+  "homepage": "https://github.com/FernandoTorresL/Flights_REST_API#readme"
+}
