@@ -20,38 +20,57 @@ To plan this API, like Victoria taught us, we must first understand what we want
 
 These is, so far, an example of data flight:
 
-![Data Flight JSON example](https://i.imgur.com/IM8sbX2.png)
+![Data Flight JSON example](https://i.imgur.com/21KX89i.png)
 
 ```json
-{'flight_schedules': 
-  {'departure': 'EZE',
-   'departure_time': '18:35',
-   'arrival': 'MAD',
-   'arrival_time': '13:10',
-   'flight_duration': '14H35M',
-   'currency': 'US$',
-   'price': '551'},
-  'stopovers': [
-    {'departure': 'EZE',
-    'departure_time': '18:35',
-    'flight_duration': '2:45',
-    'arrival': 'GRU',
-    'arrival_time': '21:20',
-    'flight_number': 'LA8011',
-    'flight_airplane_model': 'Airbus 320-200',
-    'stopover_duration': '1:35'},
-    {'departure': 'GRU',
-    'departure_time': '22:55',
-    'flight_duration': '10:15',
-    'arrival': 'MAD',
-    'arrival_time': '13:10+1',
-    'flight_number': 'LA8064',
-    'flight_airplane_model': 'Boeing 777-300',
-    'stopover_duration': []}],
-   'prices': [
-     {'LIGHT': {'moneda': 'US$', 'valor': '551'}},
-     {'PLUS': {'moneda': 'US$', 'valor': '624'}},
-     {'TOP': {'moneda': 'US$', 'valor': '707'}}]
+{
+  departure: "EZE",
+  departure_time: "18:35",
+  arrival: "MAD",
+  arrival_time: "13:10",
+  flight_duration: 875,
+  flight_url: "a flight website url",
+  stopovers: [
+    {
+    stopover_departure: "EZE",
+    stopover_departure_time: "18:35",
+    stopover_arrival: "GRU",
+    stopover_arrival_time: "21:20",
+    stopover_flight_duration: 165,
+    stopover_flight_number: "LA8011",
+    stopover_flight_airplane_model: "Airbus 320-200",
+    stopover_airline_image: "an image file url",
+    stopover_duration: 95,
+    },
+    {
+    stopover_departure: "GRU",
+    stopover_departure_time: "22:55",
+    stopover_arrival: "MAD",
+    stopover_arrival_time: "13:10+1",
+    stopover_flight_duration: 615,
+    stopover_flight_number: "LA8064",
+    stopover_flight_airplane_model: "Boeing 777-300",
+    stopover_airline_image: "an image file url",
+    stopover_duration: 0,
+    },
+  ],
+  prices: [
+    {
+    category: "LIGHT",
+    currency: "US$",
+    price: 551
+    },
+    {
+    category: "PLUS",
+    currency: "US$",
+    price: 624
+    },
+    {
+    category: "TOP",
+    currency: "US$",
+    price: 707
+    },
+  ]
 }
 ```
 Created with [jsonviewer.stack.hu](http://jsonviewer.stack.hu/)
