@@ -1,11 +1,15 @@
 const express = require("express");
 const routes = require('./routes/flight'); // import the routes
+const helmet = require('helmet');
+const compression = require('compression');
 require('dotenv').config();
 
 // import mongoose
 const mongoose = require('mongoose');
 
 const app = express();
+app.use(helmet());
+app.use(compression());
 
 app.use(express.json());
 
