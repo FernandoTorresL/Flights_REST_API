@@ -1,9 +1,13 @@
 {
   "name": "flights_rest_api",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.18.4"
+  },
   "description": "A simple API for some example data flight that we got from another scraping project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
